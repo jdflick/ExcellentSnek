@@ -42,7 +42,7 @@ while row_count >= startrow:
     col3 = startcolumn + 2
     col4 = startcolumn + 3
 
-# This version will eliminate extra bullets, unless all cells are empty
+# This version will eliminate extra bullets, you will just be left with to UL tags
 
 
     if str(sheet.cell(row=startrow, column=col2).value) == 'None':
