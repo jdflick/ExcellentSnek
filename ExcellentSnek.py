@@ -45,17 +45,17 @@ while row_count >= startrow:
 # mark empty cells to easily identify for later use.  You could insert more code to not write anything as well
 # it's generally good to know what items are missing data and makes this run fast too
 
-    if str(sheet.cell(row=startrow, column=col2).value) == "":
+    if str(sheet.cell(row=startrow, column=col2).value) == 'None':
         data2 = "EMPTY CELL"
     else:
         data2 = str(sheet.cell(row=startrow, column=col2).value)
         
-    if str(sheet.cell(row=startrow, column=col3).value) == "":
+    if str(sheet.cell(row=startrow, column=col3).value) == 'None':
         data3 = "EMPTY CELL"
     else:
         data3 = str(sheet.cell(row=startrow, column=col3).value)  
         
-    if str(sheet.cell(row=startrow, column=col4).value) == "":
+    if str(sheet.cell(row=startrow, column=col4).value) == 'None':
         data4 = "EMPTY CELL"
     else:
         data4 = str(sheet.cell(row=startrow, column=col4).value) 
